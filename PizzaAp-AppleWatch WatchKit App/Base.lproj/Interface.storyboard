@@ -18,6 +18,7 @@
                         <button width="1" alignment="left" title="Chica" id="c25-P2-FQy">
                             <color key="titleColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
+                                <action selector="tChica" destination="AgC-eL-Hgc" id="OyZ-2o-a79"/>
                                 <segue destination="dDY-YC-kXw" kind="push" id="bKJ-9w-dsi"/>
                             </connections>
                         </button>
@@ -30,10 +31,14 @@
                         <button width="1" alignment="left" title="Grande" id="woP-AL-DSU">
                             <color key="titleColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
+                                <action selector="tGrande" destination="AgC-eL-Hgc" id="BAE-En-2dy"/>
                                 <segue destination="dDY-YC-kXw" kind="push" id="cCC-d2-DaI"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="tMediana" destination="s7M-Hx-XY1" id="4Ch-uy-nac"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="2" y="209"/>
@@ -73,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="2" y="537"/>
         </scene>
-        <!--Interface Controller-->
+        <!--vistaOrden-->
         <scene sceneID="cPw-Xh-Qg4">
             <objects>
-                <controller id="CAP-vZ-CeN">
+                <controller identifier="vistaOrden" id="CAP-vZ-CeN">
                     <items>
                         <label width="136" alignment="left" text="Esta es tu orden" textAlignment="center" id="pEG-MD-pyo"/>
                         <group width="1" alignment="left" id="eHE-Tx-d77">

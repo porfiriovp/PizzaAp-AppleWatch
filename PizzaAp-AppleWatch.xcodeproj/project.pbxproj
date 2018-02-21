@@ -16,9 +16,11 @@
 		F18B8135203CFDCB00611756 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F18B8133203CFDCB00611756 /* Interface.storyboard */; };
 		F18B8137203CFDCB00611756 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18B8136203CFDCB00611756 /* Assets.xcassets */; };
 		F18B813E203CFDCB00611756 /* PizzaAp-AppleWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F18B813D203CFDCB00611756 /* PizzaAp-AppleWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F18B8143203CFDCB00611756 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B8142203CFDCB00611756 /* InterfaceController.swift */; };
+		F18B8143203CFDCB00611756 /* TamanoDePizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B8142203CFDCB00611756 /* TamanoDePizza.swift */; };
 		F18B8145203CFDCB00611756 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B8144203CFDCB00611756 /* ExtensionDelegate.swift */; };
 		F18B8147203CFDCB00611756 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18B8146203CFDCB00611756 /* Assets.xcassets */; };
+		F18B8159203D0AD100611756 /* TipoMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B8158203D0AD100611756 /* TipoMasa.swift */; };
+		F1D1846C203DE76C00816980 /* Valores.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D1846B203DE76C00816980 /* Valores.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,10 +78,12 @@
 		F18B8136203CFDCB00611756 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F18B8138203CFDCB00611756 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F18B813D203CFDCB00611756 /* PizzaAp-AppleWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PizzaAp-AppleWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F18B8142203CFDCB00611756 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F18B8142203CFDCB00611756 /* TamanoDePizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamanoDePizza.swift; sourceTree = "<group>"; };
 		F18B8144203CFDCB00611756 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		F18B8146203CFDCB00611756 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F18B8148203CFDCB00611756 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F18B8158203D0AD100611756 /* TipoMasa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoMasa.swift; sourceTree = "<group>"; };
+		F1D1846B203DE76C00816980 /* Valores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Valores.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,10 +150,12 @@
 		F18B8141203CFDCB00611756 /* PizzaAp-AppleWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F18B8142203CFDCB00611756 /* InterfaceController.swift */,
+				F18B8142203CFDCB00611756 /* TamanoDePizza.swift */,
 				F18B8144203CFDCB00611756 /* ExtensionDelegate.swift */,
 				F18B8146203CFDCB00611756 /* Assets.xcassets */,
 				F18B8148203CFDCB00611756 /* Info.plist */,
+				F18B8158203D0AD100611756 /* TipoMasa.swift */,
+				F1D1846B203DE76C00816980 /* Valores.swift */,
 			);
 			path = "PizzaAp-AppleWatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -298,8 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1D1846C203DE76C00816980 /* Valores.swift in Sources */,
+				F18B8159203D0AD100611756 /* TipoMasa.swift in Sources */,
 				F18B8145203CFDCB00611756 /* ExtensionDelegate.swift in Sources */,
-				F18B8143203CFDCB00611756 /* InterfaceController.swift in Sources */,
+				F18B8143203CFDCB00611756 /* TamanoDePizza.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
