@@ -1,15 +1,152 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--vistaTamano-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="vistaTamano" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PizzaAp_AppleWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="132" alignment="left" text="Tamano de Pizza" textAlignment="center" id="J5H-68-cfY"/>
+                        <button width="1" alignment="left" title="Chica" id="c25-P2-FQy">
+                            <color key="titleColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="dDY-YC-kXw" kind="push" id="bKJ-9w-dsi"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Mediana" id="s7M-Hx-XY1">
+                            <color key="titleColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="dDY-YC-kXw" kind="push" id="lS9-Yj-B2c"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Grande" id="woP-AL-DSU">
+                            <color key="titleColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="dDY-YC-kXw" kind="push" id="cCC-d2-DaI"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="2" y="209"/>
+        </scene>
+        <!--vistaQueso-->
+        <scene sceneID="Ai2-gW-da8">
+            <objects>
+                <controller identifier="vistaQueso" id="1uE-Ou-wLn">
+                    <items>
+                        <label width="131" alignment="left" text="Tipo de Queso" textAlignment="center" id="bqO-no-dPw"/>
+                        <button width="1" alignment="left" title="Mozarela" id="qRx-6M-SnF">
+                            <color key="titleColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="CAP-vZ-CeN" kind="push" id="qCW-JO-9ko"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Cheddar" id="Snq-hL-GKI">
+                            <color key="titleColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="CAP-vZ-CeN" kind="push" id="l9g-Dm-sS1"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Parmesano" id="GhC-gK-NWy">
+                            <color key="titleColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="CAP-vZ-CeN" kind="push" id="INY-Z9-Lqj"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Sin Queso" id="cHm-RW-y5C">
+                            <color key="titleColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="CAP-vZ-CeN" kind="push" id="aPa-Rx-U1L"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="2" y="537"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="cPw-Xh-Qg4">
+            <objects>
+                <controller id="CAP-vZ-CeN">
+                    <items>
+                        <label width="136" alignment="left" text="Esta es tu orden" textAlignment="center" id="pEG-MD-pyo"/>
+                        <group width="1" alignment="left" id="eHE-Tx-d77">
+                            <items>
+                                <label alignment="left" text="Tamano:" id="tcb-XT-flY">
+                                    <color key="textColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <label width="68" alignment="left" text="Label" id="JRF-Up-oF9">
+                                    <color key="textColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Ani-M9-3l1">
+                            <items>
+                                <label alignment="left" text="Masa:" id="eZI-74-8ZY">
+                                    <color key="textColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <label width="88" alignment="left" text="Label" id="5Tt-nQ-7ex">
+                                    <color key="textColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="zS2-U8-fUX">
+                            <items>
+                                <label width="59" alignment="left" text="Queso:" id="aIj-jq-tpS">
+                                    <color key="textColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <label width="83" alignment="left" text="Label" id="Yl5-FL-0bm">
+                                    <color key="textColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="254" y="519"/>
+        </scene>
+        <!--vistaMasa-->
+        <scene sceneID="BFh-mQ-Jbz">
+            <objects>
+                <controller identifier="vistaMasa" id="dDY-YC-kXw">
+                    <items>
+                        <label width="133" alignment="left" text="Tipo de Masa" textAlignment="center" id="8XR-zZ-vhH"/>
+                        <button width="1" alignment="left" title="Delgada" id="wJ8-Rf-KPY">
+                            <color key="titleColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="1uE-Ou-wLn" kind="push" id="axl-OO-PV2"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Crujiente" id="g5q-fb-5Be">
+                            <color key="titleColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="1uE-Ou-wLn" kind="push" id="Wxf-BR-3cK"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Gruesa" id="2dx-ZD-yXG">
+                            <color key="titleColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="1uE-Ou-wLn" kind="push" id="GSq-xD-sMM"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="254" y="209"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bKJ-9w-dsi"/>
+        <segue reference="INY-Z9-Lqj"/>
+        <segue reference="Wxf-BR-3cK"/>
+    </inferredMetricsTieBreakers>
 </document>
