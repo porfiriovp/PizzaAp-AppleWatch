@@ -21,6 +21,8 @@
 		F18B8147203CFDCB00611756 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18B8146203CFDCB00611756 /* Assets.xcassets */; };
 		F18B8159203D0AD100611756 /* TipoMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B8158203D0AD100611756 /* TipoMasa.swift */; };
 		F1D1846C203DE76C00816980 /* Valores.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D1846B203DE76C00816980 /* Valores.swift */; };
+		F1D1846E203DEC6100816980 /* TipoQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D1846D203DEC6100816980 /* TipoQueso.swift */; };
+		F1D18470203DF03800816980 /* ordenPizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D1846F203DF03800816980 /* ordenPizza.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		F18B8148203CFDCB00611756 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F18B8158203D0AD100611756 /* TipoMasa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoMasa.swift; sourceTree = "<group>"; };
 		F1D1846B203DE76C00816980 /* Valores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Valores.swift; sourceTree = "<group>"; };
+		F1D1846D203DEC6100816980 /* TipoQueso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoQueso.swift; sourceTree = "<group>"; };
+		F1D1846F203DF03800816980 /* ordenPizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ordenPizza.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,8 @@
 				F18B8148203CFDCB00611756 /* Info.plist */,
 				F18B8158203D0AD100611756 /* TipoMasa.swift */,
 				F1D1846B203DE76C00816980 /* Valores.swift */,
+				F1D1846D203DEC6100816980 /* TipoQueso.swift */,
+				F1D1846F203DF03800816980 /* ordenPizza.swift */,
 			);
 			path = "PizzaAp-AppleWatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -305,7 +311,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1D1846C203DE76C00816980 /* Valores.swift in Sources */,
+				F1D18470203DF03800816980 /* ordenPizza.swift in Sources */,
 				F18B8159203D0AD100611756 /* TipoMasa.swift in Sources */,
+				F1D1846E203DEC6100816980 /* TipoQueso.swift in Sources */,
 				F18B8145203CFDCB00611756 /* ExtensionDelegate.swift in Sources */,
 				F18B8143203CFDCB00611756 /* TamanoDePizza.swift in Sources */,
 			);

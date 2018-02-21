@@ -46,30 +46,34 @@
         <!--vistaQueso-->
         <scene sceneID="Ai2-gW-da8">
             <objects>
-                <controller identifier="vistaQueso" id="1uE-Ou-wLn">
+                <controller identifier="vistaQueso" id="1uE-Ou-wLn" customClass="TipoQueso" customModule="PizzaAp_AppleWatch_WatchKit_Extension">
                     <items>
                         <label width="131" alignment="left" text="Tipo de Queso" textAlignment="center" id="bqO-no-dPw"/>
                         <button width="1" alignment="left" title="Mozarela" id="qRx-6M-SnF">
                             <color key="titleColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
+                                <action selector="qMozarela" destination="1uE-Ou-wLn" id="Tko-P6-i5n"/>
                                 <segue destination="CAP-vZ-CeN" kind="push" id="qCW-JO-9ko"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Cheddar" id="Snq-hL-GKI">
                             <color key="titleColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
+                                <action selector="qCheddar" destination="1uE-Ou-wLn" id="Bcq-4d-kTS"/>
                                 <segue destination="CAP-vZ-CeN" kind="push" id="l9g-Dm-sS1"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Parmesano" id="GhC-gK-NWy">
                             <color key="titleColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
+                                <action selector="qParmesano" destination="1uE-Ou-wLn" id="Mx6-3l-nFa"/>
                                 <segue destination="CAP-vZ-CeN" kind="push" id="INY-Z9-Lqj"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Sin Queso" id="cHm-RW-y5C">
                             <color key="titleColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
+                                <action selector="SinQ" destination="1uE-Ou-wLn" id="glb-Ey-yZl"/>
                                 <segue destination="CAP-vZ-CeN" kind="push" id="aPa-Rx-U1L"/>
                             </connections>
                         </button>
@@ -81,7 +85,7 @@
         <!--vistaOrden-->
         <scene sceneID="cPw-Xh-Qg4">
             <objects>
-                <controller identifier="vistaOrden" id="CAP-vZ-CeN">
+                <controller identifier="vistaOrden" id="CAP-vZ-CeN" customClass="ordenPizza" customModule="PizzaAp_AppleWatch_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="left" text="Esta es tu orden" textAlignment="center" id="pEG-MD-pyo"/>
                         <group width="1" alignment="left" id="eHE-Tx-d77">
@@ -114,7 +118,23 @@
                                 </label>
                             </items>
                         </group>
+                        <group width="1" alignment="left" id="uc6-QG-8sE">
+                            <items>
+                                <button width="1" alignment="left" title="Confirmar" id="ksk-OH-HZE">
+                                    <connections>
+                                        <action selector="confirmarOrden" destination="CAP-vZ-CeN" id="JrW-PQ-1GL"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="Button" id="Qmn-rO-rcU"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Modificar" id="4j6-r6-Q9g"/>
                     </items>
+                    <connections>
+                        <outlet property="masaLbl" destination="5Tt-nQ-7ex" id="2m8-lc-H8c"/>
+                        <outlet property="quesoLbl" destination="Yl5-FL-0bm" id="4BK-6H-8Cg"/>
+                        <outlet property="tamanoLbl" destination="JRF-Up-oF9" id="KWz-q5-3EQ"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="254" y="519"/>
@@ -122,24 +142,27 @@
         <!--vistaMasa-->
         <scene sceneID="BFh-mQ-Jbz">
             <objects>
-                <controller identifier="vistaMasa" id="dDY-YC-kXw">
+                <controller identifier="vistaMasa" id="dDY-YC-kXw" customClass="TipoMasa" customModule="PizzaAp_AppleWatch_WatchKit_Extension">
                     <items>
                         <label width="133" alignment="left" text="Tipo de Masa" textAlignment="center" id="8XR-zZ-vhH"/>
                         <button width="1" alignment="left" title="Delgada" id="wJ8-Rf-KPY">
                             <color key="titleColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
+                                <action selector="masaDelgada" destination="dDY-YC-kXw" id="zny-FS-faZ"/>
                                 <segue destination="1uE-Ou-wLn" kind="push" id="axl-OO-PV2"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Crujiente" id="g5q-fb-5Be">
                             <color key="titleColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
+                                <action selector="masaCrujiente" destination="dDY-YC-kXw" id="nLy-xX-0JR"/>
                                 <segue destination="1uE-Ou-wLn" kind="push" id="Wxf-BR-3cK"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Gruesa" id="2dx-ZD-yXG">
                             <color key="titleColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
+                                <action selector="masaGruesa" destination="dDY-YC-kXw" id="0NZ-LI-l2G"/>
                                 <segue destination="1uE-Ou-wLn" kind="push" id="GSq-xD-sMM"/>
                             </connections>
                         </button>
