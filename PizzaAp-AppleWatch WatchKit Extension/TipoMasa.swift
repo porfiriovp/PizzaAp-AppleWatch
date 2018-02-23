@@ -40,14 +40,17 @@ class TipoMasa: WKInterfaceController {
     
     
     @IBAction func masaDelgada() {
+        setContexto(seleccion: tipoDelgada)
     }
     
     
     @IBAction func masaCrujiente() {
+        setContexto(seleccion: tipoCrujiente)
     }
     
     
     @IBAction func masaGruesa() {
+        setContexto(seleccion: tipoGruesa)
     }
     
     
@@ -61,7 +64,7 @@ class TipoMasa: WKInterfaceController {
         
         
         vContexto.tipoMasaPizza = seleccion
-        pushController(withName: "TipoQueso", context: vContexto)
+        pushController(withName: "vistaQueso", context: vContexto)
         print(seleccion)
         
     }

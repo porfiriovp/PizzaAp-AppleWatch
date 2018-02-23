@@ -64,8 +64,8 @@ class TipoQueso: WKInterfaceController {
     
 
     func setContexto(seleccion: String) {
-        vContexto.tipoQueso = seleccion
-        pushController(withName: "TipoIngredientes", context: vContexto)
+        vContexto.tipoQuesoPizza = seleccion
+        pushController(withName: "vistaOrden", context: vContexto)
         print(seleccion)
         
     }

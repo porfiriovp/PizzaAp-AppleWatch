@@ -35,21 +35,22 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBAction func tChica() {
-        setContexto(tamanoChica)    }
+        setContexto(seleccion: tamanoChica)    }
 
     
     @IBAction func tMediana() {
-        setContexto(tamanoChica)    }
+        setContexto(seleccion: tamanoMediana)    }
     
     
     @IBAction func tGrande() {
-        setContexto(tamanoChica)    }
+        setContexto(seleccion: tamanoGrande)    }
     
     func setContexto(seleccion: String) {
-        setContexto(tamanoChica)
-        var  vContexto = Valores()
-        vContexto.tamano = seleccion
-        pushController(withName: "TipoMasa", context: vContexto)
+        
+        
+        let  vContexto = Valor()
+        vContexto.tamanoPizza = seleccion
+        pushController(withName: "vistaMasa", context: vContexto)
         print(seleccion)
         
     }
